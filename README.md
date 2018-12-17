@@ -1,2 +1,3 @@
 # S-Coin
-Research on Bitcoiin
+对区块链的探索和研究。
+前期练习来源于网上提供的代码。
