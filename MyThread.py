@@ -1,3 +1,5 @@
+from threading import Thread
+
 class MyThread(Thread):
     def __init__(self, target, args=()):
         super(MyThread, self).__init__()
@@ -9,7 +11,8 @@ class MyThread(Thread):
 
     def get_result(self):
         try:
-            return self.result
+            print(self.result)
+            return self.result           
         except Exception as e:
             print('自定义线程获取结果时发生了错误:', e)
             return None

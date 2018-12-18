@@ -1,3 +1,10 @@
+import time
+import json
+import random
+import hashlib
+
+from Block import Block
+
 class Miner(object):
     def mine(self, index, previous_hash, transaction_data):
         begin_time = time.time()
@@ -27,7 +34,7 @@ class Miner(object):
             difficulty += 1
             nonce += difficulty
             guess = previous_hash + str(nonce) + transaction_data
-            res = hashlib.sha256(guess.endcode).hexdigest()
+            res = hashlib.sha256(guess.encode()).hexdigest()
 
         return difficulty, res, nonce
             

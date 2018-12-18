@@ -1,2 +1,2 @@
 # S-Coin
-Research on Bitcoiin
+*Research on Bitcoiin
